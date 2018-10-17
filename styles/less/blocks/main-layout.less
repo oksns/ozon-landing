@@ -1,0 +1,18 @@
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 160px 176px;
+
+    @media (max-width: @page-max-width) {
+        padding: 160px 50px;
+    }
+
+    &._gray-bg {
+        background-color: @gray-background;
+    }
+
+    &._blue-bg {
+        background-color: @main-blue;
+    }
+}

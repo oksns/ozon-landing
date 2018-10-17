@@ -1,0 +1,61 @@
+.additional-info {
+    position: relative;
+    color: @white;
+    font-size: 20px;
+    font-weight: 900;
+
+    &__title {
+        position: relative;
+        font-size: 20px;
+        width: max-content;
+        margin-bottom: 18px;
+        font-weight: 900;
+        cursor: pointer;
+        border-bottom: 1px solid @white;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 19px;
+            left: -20px;
+            top: 50%;
+            margin-top: -7px;
+            background: url("../img/icons/back-arrow.svg") no-repeat;
+            transform: rotate(-90deg);
+            transition: transform .3s linear;
+        }
+
+        &._opened {
+            &:before {
+                transform: rotate(0deg);
+                transition: transform .3s linear;
+            }
+        }
+    }
+
+     &__contacts {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         opacity: 0;
+         transition: opacity .3s linear;
+
+
+         &._opened {
+             opacity: 1;
+             transition: opacity .3s linear;
+         }
+     }
+
+    &__contact {
+        margin-top: 42px;
+
+        &-item {
+
+            &._title {
+                font-weight: 900;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.nav-bar {
+    display: flex;
+    padding: 36px 64px;
+    align-items: center;
+    background-color: @main-blue;
+
+    &__item {
+        color: @white;
+        text-decoration: none;
+        font-size: 18px;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+
+        & + & {
+            margin-left: 32px;
+
+            @media (max-width: @page-max-width) {
+                margin-left: 10px;
+            }
+        }
+
+        &._logo {
+            width: 192px;
+            height: 48px;
+            background: url("../img/logo_ozon_2.0.svg");
+        }
+
+        &._search {
+            width: 16px;
+            height: 16px;
+            background: url("../img/icons/icon-search.svg");
+        }
+
+        &._right-position {
+            margin-left: auto;
+        }
+    }
+
+}

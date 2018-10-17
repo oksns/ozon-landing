@@ -1,0 +1,48 @@
+.certificates-section {
+
+    &__blocks {
+        display: flex;
+        margin-top: 108px;
+
+        & + & {
+            margin-top: 80px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        max-width: 410px;
+
+        & + & {
+            margin-left: 50px;
+        }
+    }
+
+    &__title {
+        color: @gray-title;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+        margin-top: 16px;
+        display: flex;
+    }
+    
+    &__pdf-icon {
+        position: absolute;
+        top: 0;
+        right: -122px;
+        width: 61px;
+        height: 69px;
+        padding-top: 30px;
+        padding-left: 15px;
+        color: @white;
+        background: url("../img/icons/PDF.svg") no-repeat;
+        font-weight: 900;
+    }
+}

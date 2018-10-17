@@ -1,0 +1,67 @@
+.gifts-section {
+
+    &__title {
+        padding-bottom: 180px;
+        color: @gray-title;
+        line-height: 72px;
+        font-size: 64px;
+        font-weight: 900;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+
+    }
+
+    &__item {
+        display: flex;
+        margin-top: 123px;
+        flex-direction: column;
+
+        &-title {
+            max-width: 215px;
+            font-size: 20px;
+            margin-top: auto;
+            margin-left: 60px;
+        }
+
+        &-icon {
+
+            &._marketing {
+                width: 257px;
+                height: 285px;
+                background: url("../img/marketing.png");
+            }
+
+            &._motivation {
+                width: 346px;
+                height: 300px;
+                background: url("../img/motivation.svg");
+
+            }
+
+            &._gifts {
+                width: 259px;
+                height: 278px;
+                background: url("../img/gifts.png");
+
+            }
+
+            &._clients-gifts {
+                width: 277px;
+                height: 310px;
+                background: url("../img/clients-gifts.svg");
+
+            }
+
+            &._souvenirs {
+                width: 300px;
+                height: 321px;
+                background: url("../img/souvenirs.svg");
+
+            }
+        }
+    }
+}

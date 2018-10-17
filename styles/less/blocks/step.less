@@ -1,0 +1,32 @@
+.step {
+    position: relative;
+    display: flex;
+    color: @white;
+    align-items: center;
+
+
+    & + & {
+        margin-left: 65px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 60px;
+            left: -40px;
+            background: url("../img/icons/big-arrow.png");
+        }
+    }
+
+
+    &__number {
+        font-size: 64px;
+        font-weight: 900;
+    }
+
+    &__description {
+        max-width: 130px;
+        margin-left: 15px;
+        font-size: 26px;
+    }
+}
