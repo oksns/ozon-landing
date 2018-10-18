@@ -50,6 +50,19 @@
     &__contact {
         margin-top: 42px;
 
+        // Fix for IE11
+        &:nth-child(3n+2) {
+            -ms-grid-column: 1;
+        }
+
+        &:nth-child(3n+1) {
+            -ms-grid-column: 2;
+        }
+
+        &:nth-child(3n) {
+            -ms-grid-column: 3;
+        }
+
         &-item {
 
             &._title {

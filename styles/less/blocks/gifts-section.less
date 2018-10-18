@@ -20,6 +20,20 @@
         margin-top: 123px;
         flex-direction: column;
 
+        // fix for IE 11
+        &:nth-child(3n+2) {
+            -ms-grid-column: 1;
+        }
+
+        &:nth-child(3n+1) {
+            -ms-grid-column: 2;
+        }
+
+        &:nth-child(3n) {
+            -ms-grid-column: 3;
+        }
+
+
         &-title {
             max-width: 215px;
             font-size: 20px;

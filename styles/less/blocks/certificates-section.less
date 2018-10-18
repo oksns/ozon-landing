@@ -11,6 +11,15 @@
         position: relative;
         max-width: 410px;
         margin-top: 80px;
+
+        // fix for IE 11
+        &:nth-child(odd) {
+            -ms-grid-column: 1;
+        }
+
+        &:nth-child(even) {
+            -ms-grid-column: 2;
+        }
     }
 
     &__title {
