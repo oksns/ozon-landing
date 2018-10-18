@@ -1,21 +1,16 @@
 .certificates-section {
 
-    &__blocks {
-        display: flex;
-        margin-top: 108px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 28px;
 
-        & + & {
-            margin-top: 80px;
-        }
     }
 
     &__item {
         position: relative;
         max-width: 410px;
-
-        & + & {
-            margin-left: 50px;
-        }
+        margin-top: 80px;
     }
 
     &__title {
@@ -31,17 +26,33 @@
     &__description {
         margin-top: 16px;
         display: flex;
+
+        &._arrow {
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 77px;
+                height: 89px;
+                position: absolute;
+                bottom: calc(100% - 70px);
+                right: 10px;
+                background: url("../img/icons/arrow.svg");
+            }
+        }
+
     }
-    
+
     &__pdf-icon {
         position: absolute;
-        top: 0;
-        right: -122px;
+        top: -35px;
+        right: -40px;
         width: 61px;
         height: 69px;
         padding-top: 30px;
         padding-left: 15px;
         color: @white;
+        text-decoration: none;
         background: url("../img/icons/PDF.svg") no-repeat;
         font-weight: 900;
     }

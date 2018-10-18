@@ -1,4 +1,13 @@
-* , body {
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 200;
