@@ -148,11 +148,11 @@ body {
 }
 .certificates-section__item:nth-child(5),
 .certificates-section__item:nth-child(6) {
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
 }
-.certificates-section__item:nth-child(3),
-.certificates-section__item:nth-child(4) {
-  -ms-grid-row: 1;
+.certificates-section__item:nth-child(7),
+.certificates-section__item:nth-child(8) {
+  -ms-grid-row: 4;
 }
 .certificates-section__title {
   color: #4F4F4F;
