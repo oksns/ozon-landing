@@ -126,6 +126,7 @@ body {
 }
 .certificates-section__description._arrow {
   position: relative;
+  width: 410px;
 }
 .certificates-section__description._arrow:after {
   content: '';
